@@ -200,17 +200,6 @@ class ExponentialEaseOutInterpolator implements Interpolator {
 public class QuickstepTransitionManager implements OnDeviceProfileChangeListener {
 
 
-
-private View createWallpaperBlurOverlay() {
-    View blurOverlay = new View(mLauncher);
-    FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(
-            FrameLayout.LayoutParams.MATCH_PARENT,
-            FrameLayout.LayoutParams.MATCH_PARENT
-    );
-    blurOverlay.setLayoutParams(layoutParams);
-    blurOverlay.setBackgroundColor(Color.TRANSPARENT); // Initial transparent background
-    return blurOverlay;
-}
     private static final boolean ENABLE_SHELL_STARTING_SURFACE =
             SystemProperties.getBoolean("persist.debug.shell_starting_surface", true);
 
